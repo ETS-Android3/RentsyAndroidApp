@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="data_main"
+            type="com.menlopark.rentsyuser.model.SampleRespo" />
+    </data>
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.menlopark.rentsyuser.ui.activitys.MainActivity">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay"
+                android:layout_gravity="center"
+                android:gravity="center" />
+            <!--<com.google.android.material.tabs.TabLayout
+                android:id="@+id/tablayout"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:tabMode="fixed"
+                app:tabGravity="fill"
+                app:tabTextColor="@color/colorGray"
+                app:tabBackground="@color/white"
+                app:tabIndicatorColor="@android:color/transparent"
+                app:tabSelectedTextColor="@color/colorPrimary"/>
+    -->
+
+            <LinearLayout
+                android:id="@+id/tabLinear"
+                android:weightSum="3"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize">
+
+                <TextView
+                    android:textSize="15sp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:id="@+id/tabCategory"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="Category" />
+                <TextView
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/black_overlay"
+                    android:gravity="center"
+                    android:id="@+id/tabSubCategory"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="Sub Category" />
+                <TextView
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/black_overlay"
+                    android:gravity="center"
+                    android:id="@+id/tabPrice"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="Price" />
+
+            </LinearLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <include
+            android:id="@+id/content_main"
+            layout="@layout/content_main" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            app:srcCompat="@android:drawable/ic_dialog_email"
+            android:visibility="gone" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+
+    <RelativeLayout
+        android:id="@+id/front_card_container"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/img_card_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            app:srcCompat="@drawable/sim" />
+
+        <LinearLayout
+            android:id="@+id/ll_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ic_delete_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="description"
+                android:visibility="visible"
+                app:srcCompat="@drawable/ic_delete_white" />
+
+            <ImageView
+                android:id="@+id/default_card"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:contentDescription="description"
+                android:src="@drawable/ic_radiobtn_off"
+                android:visibility="visible" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_change"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <!--<TextView
+                android:id="@+id/front_card_cvv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="@string/hint_cvv_front"
+                android:maxWidth="@dimen/_50sdp"
+                android:minWidth="@dimen/_50sdp"
+                android:paddingBottom="@dimen/padding_small"
+                android:paddingTop="@dimen/padding_small"
+                android:shadowColor="@color/text_shadow"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:textColor="@android:color/white"
+                android:textColorHint="@color/semi_white"
+                android:visibility="gone" />-->
+
+        </LinearLayout>
+
+        <TextView
+
+            android:id="@+id/card_number_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_change"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:text="CREDIT CARD NUMBER"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textColorHint="@color/colorGray"
+            android:textSize="@dimen/_11sdp" />
+
+        <TextView
+            android:id="@+id/front_card_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/card_number_label"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:hint="XXXX XXXX XXXX XXXX"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:textColor="@android:color/white"
+            android:textColorHint="@color/white"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/front_card_number"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Card Holder"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="@dimen/_11sdp"
+
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_weight="1"
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Country"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="@dimen/_10sdp" />
+
+                <TextView
+                    android:id="@+id/front_card_holder_country"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="2"
+                    android:textAllCaps="true"
+                    android:textColor="@color/light_gray"
+                    android:textColorHint="@android:color/white"
+                    android:textSize="@dimen/_12sdp"
+                    tools:hint="US" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_minus10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Expiry"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@color/colorGray"
+                    android:textSize="@dimen/_10sdp" />
+
+                <TextView
+                    android:id="@+id/front_card_expiry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="MM/YY"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="2"
+                    android:textAllCaps="true"
+                    android:textColor="@color/light_gray"
+                    android:textColorHint="@android:color/white"
+                    android:textSize="@dimen/_12sdp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,67 @@
+{
+  "locations":[
+
+    {
+      "id":"1",
+      "name":"GOLD  COAST",
+      "details":"560 items for Rent",
+      "city_photo":"http://www.widewallpapershd.info/file/6061/728x408/16:9/france-paris-la-tour-eiffel-city-view_1523355939.jpg"
+    },
+    {
+      "id":"2",
+      "name":"GOLD  COAST",
+      "details":"COMING SOON",
+      "city_photo":"https://scontent-bom1-1.xx.fbcdn.net/v/t1.0-9/28167096_1569195816449347_3455427507292652873_n.jpg?oh=1d8ce6306e85f50df72d24fd81ced89e&oe=5B3E01A9"
+    }
+    ,
+    {
+      "id":"3",
+      "name":"GOLD  COAST",
+      "details":"COMING SOON",
+      "city_photo":"https://scontent-bom1-1.xx.fbcdn.net/v/t1.0-9/10494582_10153058923293272_2502943562423563367_n.jpg?oh=f3505ca01eeef066c263dea7b095cc1e&oe=5B7587EC"
+    }
+    ,
+    {
+      "id":"4",
+      "name":"GOLD  COAST",
+      "details":"560 items for Rent",
+      "city_photo":"http://www.widewallpapershd.info/file/6061/728x408/16:9/france-paris-la-tour-eiffel-city-view_1523355939.jpg"
+    }
+    ,
+    {
+      "id":"5",
+      "name":"GOLD  COAST",
+      "details":"COMING SOON",
+      "city_photo":"https://scontent-bom1-1.xx.fbcdn.net/v/t1.0-9/10494582_10153058923293272_2502943562423563367_n.jpg?oh=f3505ca01eeef066c263dea7b095cc1e&oe=5B7587EC"
+    }
+    ,
+    {
+      "id":"6",
+      "name":"GOLD  COAST",
+      "details":"658 items for Rent",
+      "city_photo":"http://www.widewallpapershd.info/file/6061/728x408/16:9/france-paris-la-tour-eiffel-city-view_1523355939.jpg"
+    }
+    ,
+    {
+      "id":"7",
+      "name":"GOLD  COAST",
+      "details":"120 items for Rent",
+      "city_photo":"http://www.widewallpapershd.info/file/6061/728x408/16:9/france-paris-la-tour-eiffel-city-view_1523355939.jpg"
+    }
+    ,
+    {
+      "id":"8",
+      "name":"GOLD  COAST",
+      "details":"85 items for Rent",
+      "city_photo":"http://www.widewallpapershd.info/file/6061/728x408/16:9/france-paris-la-tour-eiffel-city-view_1523355939.jpg"
+    }
+    ,
+    {
+      "id":"9",
+      "name":"GOLD  COAST",
+      "details":"255 items for Rent",
+      "city_photo":"http://www.widewallpapershd.info/file/6061/728x408/16:9/france-paris-la-tour-eiffel-city-view_1523355939.jpg"
+    }
+
+  ]
+}

@@ -1,0 +1,36 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.menlopark.rentsyuser.ui.fragments.PendingBookingFragment">
+
+    <data>
+
+        <variable
+            name="data_booking"
+            type="com.menlopark.rentsyuser.model.Location">
+
+        </variable>
+
+
+        <variable
+            name="adapter"
+            type="com.menlopark.rentsyuser.view.adapters.HelpCategoriesAdapter" />
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/rel_main_help_cat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp">
+
+        <TextView
+            android:id="@+id/tv_double_help_cat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="BBB"
+            android:textColor="@android:color/black" />
+
+
+    </RelativeLayout>
+</layout>

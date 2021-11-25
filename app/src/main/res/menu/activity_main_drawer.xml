@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="@string/action_home"
+            android:icon="@color/colorPrimary" />
+        <item
+            android:id="@+id/nav_locaton"
+            android:title="@string/action_location" />
+        <item
+            android:id="@+id/nav_notification"
+            android:title="@string/action_notification" />
+        <item
+            android:id="@+id/nav_bookings"
+            android:title="@string/action_bookings" />
+        <item
+            android:id="@+id/nav_pending_bookings"
+            android:title="@string/action_pending_bookings" />
+        <item
+            android:id="@+id/nav_promotions"
+            android:title="@string/action_promotions" />
+
+        <item
+            android:id="@+id/nav_favorite"
+            android:title="@string/action_favorite" />
+
+        <item
+            android:id="@+id/nav_cart"
+            android:icon="@drawable/ic_cart"
+            app:actionLayout="@layout/layout_cart_menu"
+            android:title="@string/action_cart" />
+        <item
+            android:id="@+id/nav_settings"
+            android:title="@string/action_settings" />
+        <item
+            android:id="@+id/nav_reating"
+            android:title="@string/reating" />
+
+    </group>
+
+
+</menu>

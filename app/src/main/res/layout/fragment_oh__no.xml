@@ -1,0 +1,77 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.menlopark.rentsyuser.view.fragments.Oh_NoFragment">
+
+    <LinearLayout
+        android:id="@+id/ll_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/not_available"
+            android:textColor="@color/colorPrimary"
+            android:padding="@dimen/_10sdp"
+            android:layout_margin="@dimen/_10sdp"
+            android:textAllCaps="true"
+            android:textSize="@dimen/_18sdp"
+            android:gravity="center"
+            android:fontFamily="@font/helvetica_neue_bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/available_cities"
+            android:textColor="@color/text_gray"
+            android:gravity="center"
+            android:textSize="@dimen/_19sdp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/light_gray"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="1dp"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/cityList"
+                android:name="com.menlopark.rentsyuser.view.activity.LocationActivity"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:scrollbars="none" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:layout_margin="@dimen/_15sdp"
+                android:src="@drawable/ic_tick_right"
+                app:layout_anchor="@id/cityList"
+                android:visibility="gone"
+                app:layout_anchorGravity="bottom|center"
+                android:id="@+id/flotSelection"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:background="@color/coloPink"
+                android:layout_margin="@dimen/_15sdp"
+                android:layout_gravity="bottom|center"
+                android:textColor="@color/white"
+                android:text="Bring Rentsy to My city!"
+                android:layout_height="wrap_content"/>
+        </FrameLayout>
+
+
+
+    </LinearLayout>
+
+</layout>

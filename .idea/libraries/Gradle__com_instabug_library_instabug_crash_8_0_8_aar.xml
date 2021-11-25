@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.instabug.library:instabug-crash:8.0.8@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f5df922e24e1fdf983c09a9ce6877d96/jetified-instabug-crash-8.0.8/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f5df922e24e1fdf983c09a9ce6877d96/jetified-instabug-crash-8.0.8/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f5df922e24e1fdf983c09a9ce6877d96/jetified-instabug-crash-8.0.8/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.instabug.library/instabug-crash/8.0.8/3e0df0594a2cb22481606397160b05f8d980d789/instabug-crash-8.0.8-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.instabug.library/instabug-crash/8.0.8/3e0df0594a2cb22481606397160b05f8d980d789/instabug-crash-8.0.8-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

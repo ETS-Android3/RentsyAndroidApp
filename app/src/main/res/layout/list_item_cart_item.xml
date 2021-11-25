@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.menlopark.rentsyuser.ui.activitys.LocationActivity"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/detail_title"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/_5sdp"
+        android:paddingRight="@dimen/_10sdp">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:id="@+id/item_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/image"
+            android:fontFamily="@font/helvetica_neue"
+            android:paddingBottom="@dimen/_5sdp"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:layout_toLeftOf="@+id/itemPrice"
+            android:text="SkateBoard"
+            android:textAllCaps="false"
+            android:textColor="@color/bottom_gray"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+
+            android:id="@+id/itemPrice"
+            android:fontFamily="@font/helvetica_neue"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/_5sdp"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:text="$40" />
+
+        <TextView
+            android:layout_toRightOf="@+id/image"
+            android:id="@+id/date_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_name"
+            android:gravity="center_vertical"
+            android:fontFamily="@font/helvetica_neue"
+            android:paddingBottom="@dimen/_5sdp"
+            android:paddingLeft="@dimen/_10sdp"
+            android:layout_toLeftOf="@+id/item_time_duration"
+            android:text="13/12/2019 04:00 PM"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/_10sdp" />
+
+
+        <TextView
+            android:id="@+id/item_time_duration"
+            android:fontFamily="@font/helvetica_neue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_name"
+            android:textColor="@color/text_gray"
+            android:layout_alignParentRight="true"
+            android:text="1 hour" />
+    </RelativeLayout>
+</LinearLayout>

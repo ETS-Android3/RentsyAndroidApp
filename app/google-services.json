@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "630123659996",
+    "project_id": "rentcyapp",
+    "storage_bucket": "rentcyapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:630123659996:android:db5e16806a31cf1c952a19",
+        "android_client_info": {
+          "package_name": "com.menlopark.rentsyuser"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "630123659996-codhkujpnna082ck2rdclf0pbv66oo0t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC23blnJyirwlI-BooJ1r-WHS-H2bMSlRA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "630123659996-codhkujpnna082ck2rdclf0pbv66oo0t.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "630123659996-segom4aalkd5e2njrt1lk5ld365o840d.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.axat.rentsy"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

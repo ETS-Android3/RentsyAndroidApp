@@ -1,0 +1,320 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+xmlns:tools="http://schemas.android.com/tools" android:layout_height="match_parent" android:layout_width="match_parent">
+
+
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/btn_bookNow">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.daimajia.slider.library.SliderLayout
+                    android:id="@+id/detail_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_alignParentTop="true"
+                    android:maxHeight="@dimen/_40sdp"
+                    android:scaleType="centerCrop" />
+
+                <RelativeLayout
+                    android:id="@+id/item_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/detail_image"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_10sdp">
+
+                    <TextView
+                        android:id="@+id/detail_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/helvetica_neue"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingTop="@dimen/_10sdp"
+                        android:text=""
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/_14sdp" />
+
+
+                    <TextView
+                        android:id="@+id/detail_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:fontFamily="@font/helvetica_neue"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:paddingRight="@dimen/_10sdp"
+                        android:paddingTop="@dimen/_10sdp"
+                        android:text=""
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <RatingBar
+                        android:id="@+id/rating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/detail_price"
+                        android:gravity="end"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:clickable="false"
+                        android:max="50"
+                        style="@style/Widget.AppCompat.RatingBar.Small"
+                        android:numStars="5"
+                        android:progressBackgroundTint="@android:color/darker_gray"
+                        android:progressTint="@android:color/holo_orange_light"
+                        android:rating="4.5"
+                        android:secondaryProgressTint="@android:color/holo_orange_light"
+                        android:stepSize="0.5" />
+
+                    <TextView
+                        android:id="@+id/detail_category"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/detail_title"
+                        android:fontFamily="@font/helvetica_neue"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:text=""
+                        android:textColor="@color/bottom_gray"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <TextView
+                        android:id="@+id/detail_amenities"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/detail_category"
+                        android:fontFamily="@font/helvetica_neue"
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:text="@string/dummy_amenities"
+                        android:textColor="@color/colorGray"
+                        android:textSize="@dimen/_12sdp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel_tow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/item_recyclerview"
+                    android:layout_marginBottom="@dimen/_15sdp"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_10sdp">
+
+                    <TextView
+                        android:id="@+id/detail_desc_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/helvetica_neue"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:text="@string/description"
+                        android:textColor="@color/bottom_gray"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <TextView
+                        android:id="@+id/detail_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/detail_desc_title"
+                        android:fontFamily="@font/helvetica_neue"
+                        android:maxWidth="@dimen/_220sdp"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:text=""
+                        android:textColor="@color/text_gray"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <ImageView
+                        android:id="@+id/details_map"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:src="@drawable/img_map" />
+
+
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_below="@+id/rel_tow"
+                    android:background="@color/list_item_gray" />
+
+                <TextView
+                    android:id="@+id/details_booknow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view1"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/helvetica_neue"
+                    android:gravity="center"
+                    android:text="@string/bookin_now"
+                    android:textAllCaps="true"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/_14sdp" />
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_below="@+id/details_booknow"
+                    android:background="@color/list_item_gray" />
+
+                <LinearLayout
+                    android:id="@+id/ll_booking_option"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view2"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_quantity"
+                        android:layout_width="@dimen/_120sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/bg_border_blue_whitebox"
+                        android:gravity="center"
+                        android:minWidth="@dimen/_100sdp"
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:paddingLeft="@dimen/_20sdp"
+                        android:paddingRight="@dimen/_20sdp"
+                        android:paddingTop="@dimen/_10sdp"
+                        android:text="@string/quantity"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorblue"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <Button
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/bg_border_blue_whitebox"
+                        android:clickable="false"
+                        android:gravity="center"
+                        android:maxWidth="@dimen/_30sdp"
+                        android:textColor="@color/colorblue"
+                        android:textSize="@dimen/_12sdp"
+                        android:visibility="invisible" />
+
+                    <Button
+                        android:id="@+id/btn_date"
+                        android:layout_width="@dimen/_120sdp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_border_blue_whitebox"
+                        android:minWidth="@dimen/_100sdp"
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:paddingLeft="@dimen/_20sdp"
+                        android:paddingRight="@dimen/_20sdp"
+                        android:paddingTop="@dimen/_10sdp"
+                        android:text="@string/date"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorblue"
+                        android:textSize="@dimen/_12sdp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_booking_option_tow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_booking_option"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_time"
+                        android:layout_width="@dimen/_120sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/bg_border_blue_whitebox"
+                        android:gravity="center"
+                        android:minWidth="@dimen/_100sdp"
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:paddingLeft="@dimen/_20sdp"
+                        android:paddingRight="@dimen/_20sdp"
+                        android:paddingTop="@dimen/_10sdp"
+                        android:text="@string/time"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorblue"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <Button
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/bg_border_blue_whitebox"
+                        android:clickable="false"
+                        android:gravity="center"
+                        android:maxWidth="@dimen/_10sdp"
+                        android:textColor="@color/colorblue"
+                        android:textSize="@dimen/_12sdp"
+                        android:visibility="invisible" />
+
+                    <Button
+                        android:id="@+id/btn_length_of_booking"
+                        android:layout_width="@dimen/_120sdp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_border_blue_whitebox"
+                        android:minWidth="@dimen/_90sdp"
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingRight="@dimen/_10sdp"
+                        android:paddingTop="@dimen/_10sdp"
+                        android:text="@string/lenthofbooking"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorblue"
+                        android:textSize="@dimen/_12sdp" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btn_bookNow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5sp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/coloPink"
+            android:gravity="center"
+            android:minWidth="@dimen/_100sdp"
+            android:text="@string/bookin_now"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp" />
+    </RelativeLayout>
+</LinearLayout>
+
