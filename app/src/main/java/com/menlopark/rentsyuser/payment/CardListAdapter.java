@@ -105,7 +105,7 @@ public class CardListAdapter extends RecyclerView.Adapter<CardListAdapter.Settin
         } catch (JSONException e) {
             e.printStackTrace();
         }
-        ServerCall.getResponse(context, "makeAsDefaultCard.json", jsonObject.toString(), true, new ServerCall.VolleyCallback() {
+        ServerCall.getResponse(context, "make-as-default-card", jsonObject.toString(), true, new ServerCall.VolleyCallback() {
             @Override
             public void onSuccess(String result) {
                 try {
@@ -146,7 +146,7 @@ public class CardListAdapter extends RecyclerView.Adapter<CardListAdapter.Settin
         } catch (JSONException e) {
             e.printStackTrace();
         }
-        ServerCall.getResponse(context, "removeCard.json", jsonObject.toString(), true, new ServerCall.VolleyCallback() {
+        ServerCall.getResponse(context, "remove-card", jsonObject.toString(), true, new ServerCall.VolleyCallback() {
             @Override
             public void onSuccess(String result) {
                 try {

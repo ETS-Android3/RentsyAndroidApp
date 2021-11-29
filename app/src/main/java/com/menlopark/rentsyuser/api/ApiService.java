@@ -196,6 +196,6 @@ public interface ApiService {
     public Call<PostRatingRes> call_post_rating(@Body JSONObject body);
 
 
-    @POST("/rentsy/apis/addPayment.json")
+    @POST("/rentsy/public/api/my-payment-methods")
     public Call<NewCardResponse> addPayment(@Body NewCard body);
 }

@@ -159,23 +159,26 @@ public class NewCardAddActivity extends AppCompatActivity {
             e.printStackTrace();
         }
         Log.e("Data :", jsonObject.toString());
-        ServerCall.getResponse(act, "addPayment.json", jsonObject.toString(), true, new ServerCall.VolleyCallback() {
+        //  ServerCall.getResponse(act, "addPayment.json", jsonObject.toString(), true, new ServerCall.VolleyCallback() {
+        ServerCall.getResponse(act, "add-payment", jsonObject.toString(), true, new ServerCall.VolleyCallback() {
             @Override
             public void onSuccess(String result) {
+
                 if (loader != null && loader.isShowing() && !act.isFinishing()) {
                     loader.dismiss();
                 }
-              //  Toast.makeText(act, result, Toast.LENGTH_SHORT).show();
+
                 try {
                     JSONObject obj = new JSONObject(result);
-
-                    if (obj.getInt("status") == 200) {
+                    if (obj.getString("status") .equals("SUCCESS") ) {
                         showAlert();
                     } else {
-                     //   Toast.makeText(act, "Error : " + obj.getString("message") + "", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(act, "Error : " + obj.getString("message") + "", Toast.LENGTH_SHORT).show();
+
                     }
 
                 } catch (Exception e) {
+
                 }
 
 

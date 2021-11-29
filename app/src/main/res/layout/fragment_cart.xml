@@ -317,9 +317,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/view4"
-                        android:orientation="horizontal"
                         android:layout_marginLeft="15dp"
                         android:layout_marginRight="15dp"
+                        android:orientation="horizontal"
                         android:padding="@dimen/_10sdp">
 
                         <ImageView
@@ -341,8 +341,8 @@
                             android:gravity="center"
                             android:hint="@string/dummy_card_number"
                             android:maxWidth="@dimen/_220sdp"
-                            android:paddingBottom="@dimen/_5sdp"
                             android:paddingLeft="@dimen/_10sdp"
+                            android:paddingBottom="@dimen/_5sdp"
                             android:textAllCaps="true"
                             android:textColor="@color/text_gray"
                             android:textSize="@dimen/_12sdp" />
@@ -356,10 +356,10 @@
                             android:padding="@dimen/_5sdp"
                             android:paddingTop="@dimen/_5sdp"
                             android:text="@string/change"
-                            android:visibility="gone"
                             android:textAllCaps="true"
                             android:textColor="@color/colorPrimary"
-                            android:textSize="@dimen/_10sdp" />
+                            android:textSize="@dimen/_10sdp"
+                            android:visibility="gone" />
 
 
                     </LinearLayout>

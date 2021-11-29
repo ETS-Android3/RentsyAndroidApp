@@ -12,6 +12,12 @@ public class CalendarDataRes {
     @SerializedName("status")
     private String mStatus;
 
+    public CalendarDataRes(Data mData, String mMessage, String mStatus) {
+        this.mData = mData;
+        this.mMessage = mMessage;
+        this.mStatus = mStatus;
+    }
+
     public Data getData() {
         return mData;
     }

@@ -78,7 +78,7 @@ public class CalenderFragment extends Fragment {
 
     private static final String ARG_COLUMN_COUNT = "column-count";
     private int mColumnCount = 1;
-    private int load=0;
+//    private int load=0;
 
 
     public static CalenderFragment newInstance(String param1, String param2) {

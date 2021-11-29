@@ -103,7 +103,7 @@ public class CardListActivity extends AppCompatActivity implements OnCardClickLi
             e.printStackTrace();
         }
         Log.e("call_getListOfCards: ", jsonObject.toString() + "");
-        ServerCall.getResponse(act, "myPaymentMethods.json", jsonObject.toString(), true, new ServerCall.VolleyCallback() {
+        ServerCall.getResponse(act, "my-payment-methods", jsonObject.toString(), true, new ServerCall.VolleyCallback() {
             @Override
             public void onSuccess(String result) {
                 try {
@@ -129,6 +129,8 @@ public class CardListActivity extends AppCompatActivity implements OnCardClickLi
             }
         });
     }
+
+
 
     @Override
     protected void onResume() {

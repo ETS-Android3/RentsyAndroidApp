@@ -22,8 +22,8 @@ public class Utils extends Activity {
 /*    public static final String publishable_Key="pk_live_baPN2tIjixgiZPduxRoietZY";
     public static final String secret_key="sk_live_pm3o3a8NlcICAsqhHGhVrdH4";*/
 
-    public static final String publishable_Key="pk_test_51HOcorDJ4fr20PqOYpeveNRsCNf0SIeD2QRMUAaTKWK2uOUHnTzftHknU5sSHAhAlZTIFg48aUORP58sAvIfhOwm00BgmE0b4k";
-    public static final String secret_key="sk_test_51HOcorDJ4fr20PqOd1YRnYIZXqtmfGOJZudbyL3LE2KPpwXenM1zIBDa5Masd59nwwFomUhExoWc10YoknYnygxr00DMONJbYK";
+    public static final String publishable_Key="pk_test_51Jx8LMSJ8KOz1HlXlHZaijTJ5ClxaLpjiMyWMtMJAsEFuZP0MfFEMn0jyUBAhCjp4ZhunJaz5q61IPoVLwHl8imy00AVLSXXLu";
+    public static final String secret_key="sk_test_51Jx8LMSJ8KOz1HlX86LiPvFnmqB96IvBZatMsZmmkKkz7vj21sqWO1MyQXBjtYRJ1W4BlAE1y36d1o04goXCvDXk00MP2B2bxq";
 
     @SuppressLint("NewApi")
     public static String getImagePath(final Context context, final Uri uri) {
